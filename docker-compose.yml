@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  web:
+  notes-app:
     image: "dochrishi/notes-app:latest"
     port:
       - "8000:8000"
