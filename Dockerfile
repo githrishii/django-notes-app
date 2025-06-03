@@ -11,6 +11,9 @@ RUN apt-get update \
 
 # Install app dependencies
 RUN pip install mysqlclient
+
+# python-decouple helps Django read environment variables from a .env file.
+RUN pip install python-decouple
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app/backend
